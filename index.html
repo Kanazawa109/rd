@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja" class="loading">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>株式会社アールアンドディー</title>
+    <meta name="description" content="株式会社アールアンドディー - 不動産売買・管理">
+
+    <meta property="og:title" content="株式会社アールアンドディー">
+    <meta property="og:description" content="不動産売買・管理">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kanazawa109.github.io/rd/">
+    <meta property="og:image" content="https://kanazawa109.github.io/rd/assets/images/background2.jpg">
+
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- 背景画像 -->
+<div class="background-image" aria-hidden="true">
+    <img src="assets/images/background2.jpg" alt="">
+</div>
+
+<!-- ローディングページ -->
+<div class="loading-screen" id="loadingScreen" role="status" aria-live="polite">
+    <div class="loading-content">
+        <div class="loading-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+                <path d="M5 21V7h6V3h2v4h6v14H5zm2-2h2v-2H7v2zm0-4h2v-2H7v2zm0-4h2V9H7v2zm4 8h2v-2h-2v2zm0-4h2v-2h-2v2zm0-4h2V9h-2v2zm4 8h2v-2h-2v2zm0-4h2v-2h-2v2zm0-4h2V9h-2v2z"/>
+            </svg>
+        </div>
+        <div class="loading-tagline">Research &amp; Development</div>
+        <div class="loading-company">株式会社アールアンドディー</div>
+        <div class="loading-description">不動産売買・管理</div>
+        <div class="loading-spinner" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="loading-status" id="loadingStatus">物件情報を取得しています...</div>
+    </div>
+</div>
+
+<header>
+    <h1 class="sr-only">株式会社アールアンドディー</h1>
+    <nav aria-label="メインナビゲーション">
+        <a href="#property">所有物件情報</a>
+        <a href="#news">ニュース</a>
+        <a href="#about">会社概要</a>
+        <a href="#contact">お問い合わせ</a>
+        <a href="#recruit">求人</a>
+    </nav>
+</header>
+
+<main>
+    <section id="property" class="anchor">
+        <h2>所有物件情報</h2>
+        <div class="property-grid" id="propertyGrid"></div>
+    </section>
+
+    <section id="news" class="anchor">
+        <h2>ニュース</h2>
+        <div class="news-list" id="newsList"></div>
+    </section>
+
+    <section id="about" class="anchor">
+        <h2>会社概要</h2>
+        <table class="company-table">
+            <tr>
+                <th>商号</th>
+                <td>株式会社アールアンドディー</td>
+            </tr>
+            <tr>
+                <th>代表者</th>
+                <td>代表取締役　金沢 剛</td>
+            </tr>
+            <tr>
+                <th>所在地</th>
+                <td>〒150-0031<br>東京都渋谷区桜丘町24番8号<br>新南平台マンション1001号</td>
+            </tr>
+            <tr>
+                <th>設立</th>
+                <td>平成10年8月27日</td>
+            </tr>
+            <tr>
+                <th>資本金</th>
+                <td>1,000万円</td>
+            </tr>
+            <tr>
+                <th>事業内容</th>
+                <td>不動産売買・管理<br>オペルクリカリア・パキプスを中心とした<br>コーデックス類の栽培</td>
+            </tr>
+            <tr>
+                <th>宅地建物<br>取引業者免許</th>
+                <td>東京都知事（6）第79240号</td>
+            </tr>
+            <tr>
+                <th>保有資格</th>
+                <td>宅地建物取引士 4名<br>賃貸不動産経営管理士 2名<br>マンション管理士 1名<br>業務管理主任者 1名</td>
+            </tr>
+            <tr>
+                <th>所属団体</th>
+                <td>全国宅地建物取引業保証協会<br>新南平台マンション管理組合法人　理事長<br>ホワイトヒル渋谷管理組合　理事長<br>セントラル早稲田管理組合　理事長<br>大同ビル・大同マンション管理組合　理事長<br>エメロード西麻布ガーデン管理組合　理事長</td>
+            </tr>
+            <tr>
+                <th>取引銀行</th>
+                <td>東日本銀行 初台・代田橋支店<br>りそな銀行 池袋支店<br>みずほ銀行 世田谷法人部</td>
+            </tr>
+            <tr>
+                <th>営業時間</th>
+                <td>10:00〜18:00（最終受付 17:30）</td>
+            </tr>
+            <tr>
+                <th>定休日</th>
+                <td>土曜・日曜・祝日</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact" class="anchor">
+        <h2>お問い合わせ</h2>
+        <div class="contact-box">
+            <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                </div>
+                <div class="contact-text">
+                    <span>TEL</span>
+                    <a href="tel:03-3461-0999">03-3461-0999（代表）</a>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                </div>
+                <div class="contact-text">
+                    <span>MAIL</span>
+                    <a href="mailto:info@r-and-d.co.jp">info@r-and-d.co.jp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recruit" class="anchor">
+        <h2>求人</h2>
+        <div class="recruit-notice">
+            <p>現在、求人の募集は行っておりません。<br>募集を開始する際は、当サイトにてお知らせいたします。</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 株式会社アールアンドディー</p>
+    <p class="footer-notice">当サイトに掲載されている画像・情報の無断転載を禁じます。</p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
