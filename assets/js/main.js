@@ -92,6 +92,10 @@ async function loadProperties() {
         setTimeout(() => {
             loadingScreen.classList.add('hidden');
             document.documentElement.classList.remove('loading');
+            window.scrollTo(0, 0);
+            requestAnimationFrame(() => {
+                window.dispatchEvent(new Event('scroll'));
+            });
         }, 300);
 
     } catch (error) {
