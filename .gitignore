@@ -1,0 +1,70 @@
+# ========================================
+# OS関連
+# ========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ========================================
+# エディタ・IDE
+# ========================================
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains (WebStorm, PhpStorm等)
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# ========================================
+# 依存関係・ビルド
+# ========================================
+node_modules/
+vendor/
+bower_components/
+dist/
+build/
+*.log
+
+# ========================================
+# 環境・機密情報
+# ========================================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+config.local.js
+
+# ========================================
+# キャッシュ
+# ========================================
+.cache/
+.tmp/
+*.cache
+
+# ========================================
+# その他
+# ========================================
+*.zip
+*.tar.gz
+*.bak
